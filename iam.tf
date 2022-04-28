@@ -5,7 +5,6 @@ resource "aws_iam_role" "ecs_execution_role" {
   )
 }
 
-# Cluster Execution Policy
 resource "aws_iam_role_policy" "ecs_execution_role_policy" {
   name = "ecsTaskExecutionPolicy"
   policy = file(
