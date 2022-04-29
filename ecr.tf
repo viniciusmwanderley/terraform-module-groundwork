@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "main" {
-  name = var.environment
+  name = "app"
 
   tags = {
     Name = var.environment
